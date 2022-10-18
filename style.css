@@ -5,6 +5,12 @@
   color: #6c6b6b;
 }
 
+body{
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
 a {
   text-decoration: none;
   color: #38b48b;
@@ -41,6 +47,7 @@ nav{
 }
 
 main {
+  flex: 1;
   padding: 10px 40px 40px 40px;
   background-color: #ecfcdf;
 }
@@ -97,4 +104,18 @@ footer {
 
 .footer-text{
   color: #fff;
+}
+
+@media screen and (max-width:768px){
+  .main-box{
+    display: block;
+  }
+
+  .image-box{
+    width: 100%;
+  }
+
+  .item-box{
+    width: 100%;
+  }
 }
